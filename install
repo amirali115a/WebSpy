@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+sudo pip install requests 
+sudo pip install builtwith
+sudo chmod +x WebSpy
+echo install done 
