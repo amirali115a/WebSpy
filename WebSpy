@@ -2,7 +2,6 @@
 import socket
 import requests
 import argparse
-import shodan
 import json
 import time
 import builtwith
@@ -96,7 +95,7 @@ print (f'{Ye}IP Information:')
 IP_information(targetip)
 print(f'{Ye}Whois:')
 whois(args.u)
-print(f'{Ye}Site Technology Tnformation:')
+print(f'{Ye}Site Technology Information:')
 technology(http)
 print(f'{Ye} HTTP Header:')
 httpheader(args.u)
