@@ -6,8 +6,11 @@ Information gathering  tool
 <img align="center" src="screen3.png" width="900">
 # installation
 `git clone https://github.com/amirali115a/WebSpy `
+
 `cd WebSpy`
+
 `bash ./install`
+
 
 # Usage
 `./WebSpy --help `
