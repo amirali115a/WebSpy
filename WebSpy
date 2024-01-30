@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import socket
 import requests
 import argparse
@@ -42,7 +42,6 @@ def IP_information(ip):
             print(f"{Wh} Country         :{Gr}", ip_data["country"])
             print(f"{Wh} Country Code    :{Gr}", ip_data["country_code"])
             print(f"{Wh} City            :{Gr}", ip_data["city"])
-            print(f"{Wh} Continent       :{Gr}", ip_data["continent"])
             print(f"{Wh} Continent Code  :{Gr}", ip_data["continent_code"])
             print(f"{Wh} Region          :{Gr}", ip_data["region"])
             print(f"{Wh} Region Code     :{Gr}", ip_data["region_code"])
@@ -77,15 +76,6 @@ def whois(domain):
   i = i[2:1000]
   print(f'{Blu}',i)
 
-def technology(target):
- result = builtwith.parse(target)
- for i in result:
-  for s in result[i]:
-   print(f'{Wh}',i +" : "+ s)
-def httpheader(target):
- http = requests.get('https://api.hackertarget.com/httpheaders/?q=' + target).text
- print(f'{Gr}',http)
- 
 def dns(target):
  result = requests.get('http://api.hackertarget.com/dnslookup/?q=' + target).text
  print(f'{Wh}',result)    
@@ -95,9 +85,5 @@ print (f'{Ye}IP Information:')
 IP_information(targetip)
 print(f'{Ye}Whois:')
 whois(args.u)
-print(f'{Ye}Site Technology Information:')
-technology(http)
-print(f'{Ye} HTTP Header:')
-httpheader(args.u)
 print(f'{Ye} DNS Lookup:')
 dns(args.u)
