@@ -1,7 +1,7 @@
 # WebSpy
 Information gathering  tool
 
-<img align="center" src="" width="900">
+<img align="center" src="screen.png" width="900">
 <img align="center" src="screen2.png" width="900">
 <img align="center" src="screen3.png" width="900">
 # installation
@@ -11,5 +11,10 @@ Information gathering  tool
 
 # Usage
 `./WebSpy --help `
+
 `./WebSpy -u <your website>`
+
+
 ` ./WebSpy -u google.com  `
+
+
